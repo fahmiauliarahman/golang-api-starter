@@ -1,4 +1,4 @@
-namespace go api.ping
+namespace go api.health
 
 struct HealthRequest {}
 
