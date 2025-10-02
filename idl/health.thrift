@@ -1,0 +1,11 @@
+namespace go api.ping
+
+struct HealthRequest {}
+
+struct HealthResponse {
+    1: string message
+}
+
+service HealthService {
+    HealthResponse Health(1: HealthRequest req) (api.get = "/health")
+}
